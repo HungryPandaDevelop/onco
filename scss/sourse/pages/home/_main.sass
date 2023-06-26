@@ -1,0 +1,48 @@
+.main-home
+  height: 1380px
+  min-height: 620px
+  background-color: $blueColor
+  position: relative
+  text-align: center
+  h1
+    margin: 0
+    margin-bottom: 30px
+    color: inherit
+    font-size: 32px
+    font-weight: 500
+    span
+      font-weight: 800
+      color: $pinkColor
+
+.main-home-content
+  padding-top: 290px
+.main-home-info
+  height: 800px
+.main-home-list
+  max-width: 380px
+  margin: 0 auto
+  h2
+    font-weight: 500
+    font-size: 20px
+    line-height: 1
+  h3
+    font-size: 32px
+    color: $pinkColor
+    span
+      font-size: 16px
+.main-home-item
+  position: relative
+  margin-bottom: 45px
+  &:after
+    content: ''
+    @include positionElement(1px, 30px, 50%, 100%)
+    background-color: $blackColor
+.main-home-img
+  @include positionElement(100%,100%,0,0)
+  background-position: center top
+.main-home-botom
+  position: relative
+  font-size: 32px
+  text-align: left
+  padding-left: 30px
+  border-left: 1px dashed $pinkColor
